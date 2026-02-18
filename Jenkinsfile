@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('html build page') {
+        stage('building a web') {
             steps {
-                publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, icon: '', keepAll: false, reportDir: '', reportFiles: 'EventRegistrationForm.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
+               publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, icon: '', keepAll: false, reportDir: '', reportFiles: 'EventRegistrationForm.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
             }
         }
     }
